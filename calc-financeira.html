@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css"
+
+
+    <title></title>
+
+  
+</head>
+<body>
+  
+    
+    <div class="div_1"><h1>Calculadora financeira</h1></div>
+    <div class="div_2">Calcule o valor do nosso serviço para o seu negócio:</div>
+
+    
+    <input type="text" id="qtd_tanque" placeholder="quantidade de tanques"><br>
+    
+    
+    
+    <button onclick="calculoSensor()">Calcular</button>
+   
+    
+    <div id="resultado">  
+    </div>
+
+    <div class="div_3"><h2>PLANOS TANK SOLUTION:</h2></div>
+
+    <div class="div_4">Plano básico: 6 meses de manutenção por apenas R$750,00.</div>
+    
+    <div class="div_5">Plano intermediário: 1 ano de manutenção por apenas R$1300,00.</div>
+    
+    <div class="div_6">Contrato avançado: 3 anos de manutenção por apenas R$2500,00.</div>
+
+</body>
+</html>
+
+
+<script>
+    function calculoSensor() {
+        var quantidadeTanque = Number(qtd_tanque.value);
+        var precoSensor = 10;
+
+// mostrando resultado 
+        resultado.innerHTML = `o preço total do serviço irá sair por R$ ${(quantidadeTanque * precoSensor+5500)} + os planos de manutenção que podem variar entre R$750,00 até R$2500,00 como mostra na tabela abaixo:`;
+    
+
+    }
+</script>
+
